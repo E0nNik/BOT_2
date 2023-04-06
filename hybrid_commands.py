@@ -1,40 +1,33 @@
 import settings
-import discord
-import random
+import discord 
 from discord.ext import commands
-
+    
 logger = settings.logging.getLogger("bot")
-
-
-
-       
 
 def run():
     intents = discord.Intents.default()
     intents.message_content = True
-
+    intents.members = True
+    
     bot = commands.Bot(command_prefix="!", intents=intents)
-
-    #info do logow
-    @bot.event
+    
+    @bot.event 
     async def on_ready():
         logger.info(f"User: {bot.user} (ID: {bot.user.id})")
+        
+        await bot.tree.sync()
+    #nie dziala, do naprawy
+    @bot.hybrid_command()
+    async def pong(ctx):
+        await ctx.send("ping")
+        
+    @bot.tree.command()
+    async def ciao(interaction: discord.Interaction):
+        await interaction.response.send_message(f"Ciao! {interaction.user.mention}", ephemeral=True)
 
 
-    @bot.event
-    async def on_command_error(ctx, error):
-        if isinstance(error, commands.MissingRequiredArgument):
-            await ctx.send("handled error globallyy")   
-    #pomoc
-    
-    @bot.command()
-    async def add(ctx, one : int , two : int ):
-        await ctx.send(one + two)    
-
-
-  
+      
     bot.run(settings.DISCORD_API_SERCRET, root_logger=True)
-     
 
 if __name__ == "__main__":
     run()

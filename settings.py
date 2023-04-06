@@ -1,13 +1,25 @@
+import pathlib
+import discord
 import os
 import logging
 from dotenv import load_dotenv
 from logging.config import dictConfig
-
+#tworzenie kanałow chwilowych, NIE DZIALA JESZCZE
 
 load_dotenv()
 
 DISCORD_API_SERCRET = os.getenv("DISCORD_API_TOKEN")
 
+BASE_DIR = pathlib.Path(__file__).parent
+
+CMDS_DIR = BASE_DIR / "cmds"
+COGS_DIR = BASE_DIR / "cogs"
+
+VIDEOCMDS_DIR = BASE_DIR / "videocmds"
+
+GUILDS_ID = discord.Object(id=int(os.getenv("GUILD")))
+FEEDBACK_CH = int(os.getenv("FEEDBACK_CH", 0))
+GUILD_ID_INT = int(os.getenv("GUILD"))
 
 LOGGING_CONFIG = {
     "version": 1,
