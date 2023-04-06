@@ -1,6 +1,8 @@
 import settings
 import discord 
 from discord.ext import commands
+import os
+import asyncio
     
 logger = settings.logging.getLogger("bot")
 
@@ -15,16 +17,25 @@ def run():
     async def on_ready():
         logger.info(f"User: {bot.user} (ID: {bot.user.id})")
     
-    @bot.command()
-    async def ping(ctx):
-        await ctx.message.author.send("Jebando")
+#odpowiada za import z cogs
+    
+    async def load():
+        for filename in os.listdir('./cogs'):
+            if filename.endswith('.py'):
+            #usuwanie .py
+                 await bot.load_extension(f'cogs.{filename[:-3]}')
 
-        #Do niku, jeszcze do ogarniecia
-        #user = discord.utils.get(bot.guilds[0].members, nick="E0nNik")
-        #if user:
-            #await user.send("Hello 2")
+    async def main():
+        await load()
         
+
+   
+        
+    asyncio.run(main())
+
     bot.run(settings.DISCORD_API_SERCRET, root_logger=True)
+        
+    
 
 if __name__ == "__main__":
     run()

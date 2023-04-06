@@ -32,7 +32,7 @@ def run():
     
        
            
-    bot.run(settings.DISCORD_API_SERCRET, root_logger=True)
+    
 
 if __name__ == "__main__":
     run()
