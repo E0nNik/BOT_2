@@ -3,20 +3,16 @@ import settings
 import discord 
 from discord.ext import commands
     
-logger = settings.logging.getLogger("bot")
-    
-def run():
-    intents = discord.Intents.default()
-    intents.message_content = True
-    
-    bot = commands.Bot(command_prefix="!", intents=intents)
-    
-    @bot.event 
-    async def on_ready():
-        logger.info(f"User: {bot.user} (ID: {bot.user.id})")
+
+
+class embed_messages(commands.Cog):
+
+    def __init__(self, bot):
+        bot.client = bot  
+
     #menu
-    @bot.command()
-    async def ping(ctx):
+    @commands.command()
+    async def wiad(self, ctx):
         embed = discord.Embed(
             colour=discord.Colour.dark_teal(), 
             description="A tu opis", 
@@ -34,9 +30,13 @@ def run():
         embed.insert_field_at(1,name="Tree", value="https://www.youtube.com/@cryptostasiak8163")
         
         await ctx.send(embed=embed)
+
+    @commands.command()
+    async def hblabla(self, ctx):
+        await  ctx.send("Witaj witaj")
     
         
-    bot.run(settings.DISCORD_API_SERCRET, root_logger=True)
+    
 
-if __name__ == "__main__":
-    run()
+async def setup(bot):
+    await bot.add_cog(embed_messages(bot))

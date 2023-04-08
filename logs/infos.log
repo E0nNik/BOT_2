@@ -1,3 +1,187 @@
-WARNING    - 2023-04-06 18:25:02,294 - client          : PyNaCl is not installed, voice will NOT be supported
-INFO       - 2023-04-06 18:25:02,323 - client          : logging in using static token
-INFO       - 2023-04-06 18:25:03,295 - gateway         : Shard ID None has connected to Gateway (Session ID: ae1538b7035cb94e3bac5b780bea9c6d).
+WARNING    - 2023-04-09 00:15:12,321 - client          : PyNaCl is not installed, voice will NOT be supported
+INFO       - 2023-04-09 00:15:12,627 - client          : logging in using static token
+INFO       - 2023-04-09 00:15:13,560 - gateway         : Shard ID None has connected to Gateway (Session ID: aa4cb6ae5fefbc3d6296c06c0c7d83c4).
+ERROR      - 2023-04-09 00:15:39,005 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 39, in on_raw_reaction_add
+    embed.set_footer(text="Wpadaj Mordo")
+    ^^^^^
+UnboundLocalError: cannot access local variable 'embed' where it is not associated with a value
+ERROR      - 2023-04-09 00:15:42,828 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 39, in on_raw_reaction_add
+    embed.set_footer(text="Wpadaj Mordo")
+    ^^^^^
+UnboundLocalError: cannot access local variable 'embed' where it is not associated with a value
+ERROR      - 2023-04-09 00:15:46,030 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 48, in on_raw_reaction_add
+    await member.send(embed=embed)
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\http.py", line 738, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50007): Cannot send messages to this user
+ERROR      - 2023-04-09 00:15:48,943 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 48, in on_raw_reaction_add
+    await member.send(embed=embed)
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\http.py", line 738, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50007): Cannot send messages to this user
+ERROR      - 2023-04-09 00:15:50,663 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 48, in on_raw_reaction_add
+    await member.send(embed=embed)
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\http.py", line 738, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50007): Cannot send messages to this user
+ERROR      - 2023-04-09 00:15:53,190 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 48, in on_raw_reaction_add
+    await member.send(embed=embed)
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\http.py", line 738, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50007): Cannot send messages to this user
+ERROR      - 2023-04-09 00:15:56,049 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 39, in on_raw_reaction_add
+    embed.set_footer(text="Wpadaj Mordo")
+    ^^^^^
+UnboundLocalError: cannot access local variable 'embed' where it is not associated with a value
+ERROR      - 2023-04-09 00:15:57,333 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 39, in on_raw_reaction_add
+    embed.set_footer(text="Wpadaj Mordo")
+    ^^^^^
+UnboundLocalError: cannot access local variable 'embed' where it is not associated with a value
+ERROR      - 2023-04-09 00:15:58,691 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 39, in on_raw_reaction_add
+    embed.set_footer(text="Wpadaj Mordo")
+    ^^^^^
+UnboundLocalError: cannot access local variable 'embed' where it is not associated with a value
+ERROR      - 2023-04-09 00:16:02,092 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 48, in on_raw_reaction_add
+    await member.send(embed=embed)
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\http.py", line 738, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50007): Cannot send messages to this user
+ERROR      - 2023-04-09 00:16:07,815 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 48, in on_raw_reaction_add
+    await member.send(embed=embed)
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\http.py", line 738, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50007): Cannot send messages to this user
+ERROR      - 2023-04-09 00:16:09,218 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 48, in on_raw_reaction_add
+    await member.send(embed=embed)
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\http.py", line 738, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50007): Cannot send messages to this user
+ERROR      - 2023-04-09 00:16:10,352 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 48, in on_raw_reaction_add
+    await member.send(embed=embed)
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\http.py", line 738, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50007): Cannot send messages to this user
+ERROR      - 2023-04-09 00:16:11,425 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 48, in on_raw_reaction_add
+    await member.send(embed=embed)
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\http.py", line 738, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50007): Cannot send messages to this user
+ERROR      - 2023-04-09 00:16:16,580 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 48, in on_raw_reaction_add
+    await member.send(embed=embed)
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\http.py", line 738, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50007): Cannot send messages to this user
+ERROR      - 2023-04-09 00:16:16,659 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 48, in on_raw_reaction_add
+    await member.send(embed=embed)
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\http.py", line 738, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50007): Cannot send messages to this user
+ERROR      - 2023-04-09 00:16:17,885 - client          : Ignoring exception in on_raw_reaction_add
+Traceback (most recent call last):
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "D:\PROJEKTY\BOT_2\main.py", line 48, in on_raw_reaction_add
+    await member.send(embed=embed)
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\PROJEKTY\BOT_2\.venv\Lib\site-packages\discord\http.py", line 738, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50007): Cannot send messages to this user

@@ -1,9 +1,12 @@
 import settings
 import discord 
 from discord.ext import commands
-import utils
+import utils 
     
-logger = settings.logging.getLogger("bot")
+class initial_select(commands.Cog):
+
+    def __init__(self, bot):
+        bot.client = bot
 
 class FavouriteGameSelect(discord.ui.Select):
     def __init__(self):
@@ -46,14 +49,14 @@ class SurveyView(discord.ui.View):
 def run():
     intents = discord.Intents.all()
     
-    bot = commands.Bot(command_prefix="!", intents=intents)
     
-    @bot.event 
+    
+    @commands.Cog.listener() 
     async def on_ready():
         await utils.load_videocmds(bot)
     
-    @bot.command()
-    async def survey(ctx):
+    @commands.command()
+    async def survey(self, ctx):
         view = SurveyView()
         await ctx.send(view=view)
         
@@ -69,7 +72,7 @@ def run():
         
         
         
-    bot.run(settings.DISCORD_API_SERCRET, root_logger=True)
+    
 
-if __name__ == "__main__":
-    run()
+async def setup(bot):
+    await bot.add_cog(initial_select(bot))
